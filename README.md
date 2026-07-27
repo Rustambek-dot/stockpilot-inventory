@@ -41,6 +41,8 @@ MIT
 
 ## Как пользоваться (Usage guide)
 
+![Live demo](screenshots/demo.gif)
+
 ### 1. Лендинг
 ![Landing](screenshots/landing.png)
 Обзор системы. Вход: `demo@example.com / Demo123!`.
