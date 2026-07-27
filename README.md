@@ -39,17 +39,20 @@ Supabase (schema + seed) → Vercel (env vars) → deploy. See [DEPLOYMENT.md](D
 ## License
 MIT
 
-## Screenshots
+## Как пользоваться (Usage guide)
 
-### Landing
+### 1. Лендинг
 ![Landing](screenshots/landing.png)
+Обзор системы. Вход: `demo@example.com / Demo123!`.
 
-### Products
+### 2. Товары
 ![Products](screenshots/products.png)
+Поиск по SKU/названию, фильтр категорий, сортировка кликом по заголовку колонки. Красный бейдж **low** — остаток ниже минимума. **Add** открывает inline-форму, **Export** скачивает CSV с остатками.
 
-### Dashboard
+### 3. Дашборд
 ![Dashboard](screenshots/dashboard.png)
+Стоимость склада, количество SKU и блок **Low Stock Alerts** — товары, которые пора заказывать. Графики: приход/расход за неделю и топ продаж.
 
-### Movements
+### 4. Движения
 ![Movements](screenshots/movements.png)
-
+Журнал каждой операции: тип (приход/списание/корректировка), причина, кто и когда. **Register** фиксирует новое движение — остаток обновится атомарно (PostgreSQL RPC).
